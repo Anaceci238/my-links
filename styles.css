@@ -12,9 +12,9 @@
 }
 
 body {
-  font-family: 'Poppins', sans-serif;
-  background-color: #C0E0DE;
-  color: #2C4251;
+  font-family: "Poppins", sans-serif;
+  background-color: #c0e0de;
+  color: #2c4251;
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -24,44 +24,84 @@ body {
 /* --- TARJETA PRINCIPAL --- */
 .card {
   width: 90%;
-  max-width: 400px;
+  max-width: 25rem;
   text-align: center;
-  padding: 40px 20px;
+  padding: 2rem 1rem;
 }
 
 /* --- FOTO DE PERFIL --- */
 .avatar {
+  width: 8rem;
+  height: 8rem;
   border-radius: 50%;
-  border: 2px solid #2C4251
+  border: 0.125rem solid #2c4251;
+  object-fit: cover;
 }
 
 /* --- NOMBRE --- */
 .name {
-  font-size: 28px;
-  margin-top: 16px;
+  font-size: 1.5rem;
+  margin-top: 1rem;
 }
 
 /* --- BIO --- */
 .bio {
-  font-size: 15px;
-  color: #153B50;
-  margin-top: 8px;
+  font-size: 0.8rem;
+  color: #153b50;
+  margin-top: 0.5rem;
 }
 
 /* --- CONTENEDOR DE ENLACES --- */
 .links {
-  margin-top: 24px;
+  margin-top: 1.5rem;
 }
 
 /* --- CADA ENLACE --- */
 .link {
   display: block;
-  padding: 14px;
-  margin-top: 12px;
-  border: 2px solid #114B5F;
-  border-radius:30px;
-  color: #2C4251;
-  background-color:#FFFFFF;
+  padding: 0.75rem;
+  margin-top: 0.75rem;
+  border: 0.1 rem solid #114b5f;
+  border-radius: 2rem;
+  color: #2c4251;
+  background-color: #ffffff;
   text-decoration: none;
-  font-size: 15px;
+  font-size: 0.8rem;
+}
+@media (min-width: 48rem) {
+  .card {
+    max-width: 31.25rem; /* 500px */
+    padding: 3rem 2rem;
+  }
+
+  .avatar {
+    width: 7.5rem;
+    height: 7.5rem;
+  }
+
+  .name {
+    font-size: 2rem;
+  }
+
+  .bio {
+    font-size: 1rem;
+  }
+
+  .link {
+    font-size: 1rem;
+    padding: 1rem;
+  }
+}
+@media (min-width: 64rem) {
+  .card {
+    max-width: 37.5rem; /* 600px */
+  }
+
+  .name {
+    font-size: 2.25rem;
+  }
+
+  .link {
+    font-size: 1.125rem;
+  }
 }
